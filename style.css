@@ -1,0 +1,509 @@
+body{
+    background-color: bisque;
+}
+.nav{
+    background-color: rgb(245 163 66);
+    z-index: 9;
+    /* padding: 15px; */
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 50%;
+}
+.logo img{
+    padding: 10px;   
+}
+.nav_side{
+    float: right;
+    width: 50%;
+    padding-top:30px;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    color: rgb(41, 7, 80);
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+    color: rgb(201, 104, 7);
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+.main{
+    background-image: url('image1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    /* opacity: 75%; */
+}
+.main .main_content {
+    /* padding-top: 100px; */
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.main .main_content h2{
+    padding-top: 250px;
+    color: rgb(48 41 30);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+}
+.main .main_content h2 span{
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: lighter;
+    line-height: 10px;
+}
+.main .main_content .btn{
+    margin-top: 10px;
+}
+.main .main_content .btn a{
+    text-decoration: none ;
+    margin: 500px;
+    padding: 10px 20px;
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.main .main_content .btn a:hover{
+    background-color: black;
+    color: orange;
+    border:none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+.product{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.20);
+}
+.product .product_container .item .item_img{
+    width: 100%;
+    height:250px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height:250px;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+}
+.product .product_container .item .item_content h3{
+    padding: 5px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.product .product_container .item .item_content p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none ;
+    margin: 25px;
+    padding: 5px 10px;
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color: orange;
+    border:none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+.product  .product_btn a:hover{
+
+    background: #e7c59a;
+    box-shadow: 0 0 25px #d69d52 , 0 0 25px #eca03b , 0 0 25px #b37a30 , 0 0 25px #7a511b;
+
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.product .product_btn a{
+    text-decoration: none ;
+    padding: 5px 10px;
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color: orange;
+    border:none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+} 
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    background-color: #eb9b50;
+    margin: 10px;
+    padding: 10px;
+    border-left:5px solid #382b19 ;
+    border-right:5px solid #271804 ;
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.20);
+    border-radius: 15px 50px;
+    text-align: center;
+}
+.keypoint .key_container .key_img{
+    width: 40%;
+    float:right;
+    
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+
+}
+.testi{
+    padding: 50px;
+}
+.testi h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.testi .testi_container .carousal_inner{
+    background-color: white;
+    box-shadow: none;
+}
+
+.testi .testi_container .item{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+.testi .testi_container .item .item_img{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    overflow:hidden ;
+}
+.testi .testi_container .item .item_img img{
+    width:100px ;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.testi .testi_container .item .item_content{
+    text-align: center;
+}
+.testi .testi_container .item .item_content h3{
+    padding: 5px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.testi .testi_container .item .item_content p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.team{
+    padding: 50px;
+}
+.team h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 30px; 
+}
+.team .team_container .team_video video{
+    width: 100%;
+    border: 2px solid rgb(70, 67, 63);
+    border-radius: 50px;
+}
+
+.team .team_container .team_content{
+    width: 40%;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+.feed{
+    padding: 50px;
+    background-image: url('image1.jpg');
+    background-size: cover;
+}
+.feed h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.feed h2{
+    text-align: right;
+    padding-right: 85px;
+}
+.feed .feed_form{
+    text-align: right;
+}
+.feed .feed_form form{
+    padding: 20px;
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin:10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin:10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form button{
+    width: 30%;
+    margin:10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: #e59d50;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    color: black;
+}
+.feed .feed_form form button:hover{
+    border:2px solid black;
+    background-color: #e59d50;
+}
+
+/* ***************about us page ********************* */
+.about_us h2{
+    text-align: center;
+    color: #3f2205;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    font-size: 23px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.about_us p{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    
+}
+/* ******************************  contact page **************************** */
+.contact_container{
+    padding: 100px;
+}
+.contact_container h3{
+    color: #3f2205;
+    font-size: 23px;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.contact_container .g_map{
+    border: 2px solid rgb(201, 104, 7);
+}
+.contact_content p{
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+/* *************************  Blog Page***************************** */
+.blog{
+    padding: 50px;
+}
+.blog h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.blog .blog_container{
+    display: flex;
+}
+
+.blog .blog_container .blog_img{
+    width: 50%;
+    padding: 30px; 
+}
+.blog .blog_container .blog_img img{
+    width: 100%;
+    border: 2px solid rgb(70, 67, 63);
+    border-radius: 50px;
+}
+.blog .blog_container .blog_content{
+    width: 40%;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: rgb(245 163 66);
+    padding: 50px;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+}
+footer .pages a:hover{
+    color: white;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: black;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+}
+footer .doc a:hover{
+    color: white;
+}
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color: black;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    padding: 5px;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: black;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif ;
+    padding: 5px;
+}
+footer .social a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+}
+footer .social a:hover{
+    color: white;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: white;
+}
+/* footer p .copyright_mark{
+    text-align: center;
+} */
+ 
